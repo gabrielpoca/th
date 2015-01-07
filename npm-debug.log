@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'link' ]
+2 info using npm@2.0.0-beta.0
+3 info using node@v0.10.28
+4 verbose linkPkg /Users/gabriel/projects/push-to-trello
+5 verbose gentlyRm vacuuming /Users/gabriel/.nvm/v0.10.28/lib/node_modules/th
+6 silly gentlyRm purging /Users/gabriel/.nvm/v0.10.28/lib/node_modules/th
+7 silly gentlyRm quitting because other entries in /Users/gabriel/.nvm/v0.10.28/lib/node_modules
+8 verbose gentlyRm vacuuming /Users/gabriel/.nvm/v0.10.28/lib/node_modules/th
+9 verbose link build target /Users/gabriel/.nvm/v0.10.28/lib/node_modules/th
+10 verbose install where,what [ '/Users/gabriel/projects/push-to-trello', [] ]
+11 verbose readDependencies using package.json deps
+12 verbose install where, deps [ '/Users/gabriel/projects/push-to-trello',
+12 verbose install   [ 'command-line-args',
+12 verbose install     'node-trello',
+12 verbose install     'promise',
+12 verbose install     'prompt',
+12 verbose install     'underscore-node' ] ]
+13 info preinstall th@0.0.0
+14 verbose readDependencies using package.json deps
+15 verbose already installed skipping promise@^6.0.1 /Users/gabriel/projects/push-to-trello
+16 verbose already installed skipping prompt@^0.2.14 /Users/gabriel/projects/push-to-trello
+17 verbose already installed skipping underscore-node@^0.1.2 /Users/gabriel/projects/push-to-trello
+18 verbose already installed skipping command-line-args@^0.5.3 /Users/gabriel/projects/push-to-trello
+19 verbose already installed skipping node-trello@^1.0.1 /Users/gabriel/projects/push-to-trello
+20 silly resolved []
+21 info build /Users/gabriel/projects/push-to-trello
+22 verbose linkStuff [ false, false, false, '/Users/gabriel/projects' ]
+23 info linkStuff th@0.0.0
+24 verbose linkBins th@0.0.0
+25 verbose linkMans th@0.0.0
+26 verbose rebuildBundles th@0.0.0
+27 verbose rebuildBundles [ 'command-line-args',
+27 verbose rebuildBundles   'node-trello',
+27 verbose rebuildBundles   'promise',
+27 verbose rebuildBundles   'prompt',
+27 verbose rebuildBundles   'underscore-node' ]
+28 info install th@0.0.0
+29 info postinstall th@0.0.0
+30 info prepublish th@0.0.0
+31 info build /Users/gabriel/.nvm/v0.10.28/lib/node_modules/th
+32 verbose linkStuff [ true,
+32 verbose linkStuff   '/Users/gabriel/.nvm/v0.10.28/lib/node_modules',
+32 verbose linkStuff   true,
+32 verbose linkStuff   '/Users/gabriel/.nvm/v0.10.28/lib/node_modules' ]
+33 info linkStuff th@0.0.0
+34 verbose linkBins th@0.0.0
+35 verbose link bins [ { th: 'lbi/th.js' }, '/Users/gabriel/.nvm/v0.10.28/bin', true ]
+36 verbose linkMans th@0.0.0
+37 error Error: ENOENT, chmod '/Users/gabriel/.nvm/v0.10.28/lib/node_modules/th/lbi/th.js'
+38 error If you need help, you may report this *entire* log,
+38 error including the npm and node versions, at:
+38 error     <http://github.com/npm/npm/issues>
+39 error System Darwin 14.0.0
+40 error command "node" "/usr/local/bin/npm" "link"
+41 error cwd /Users/gabriel/projects/push-to-trello
+42 error node -v v0.10.28
+43 error npm -v 2.0.0-beta.0
+44 error path /Users/gabriel/.nvm/v0.10.28/lib/node_modules/th/lbi/th.js
+45 error code ENOENT
+46 error errno 34
+47 verbose exit [ 34, true ]
