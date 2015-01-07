@@ -4,7 +4,7 @@
   "description": "A command line tool to move Trello cards from 'Next Up' to 'In Progress' to 'Code Review' to 'Live'.",
   "main": "lib/th.js",
   "bin": {
-    "th": "lbi/th.js"
+    "th": "lib/th.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
