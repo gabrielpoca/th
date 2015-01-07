@@ -1,7 +1,7 @@
 {
-  "name": "push-to-trello",
+  "name": "th",
   "version": "0.0.0",
-  "description": "A node package to move trello cards when closing pr",
+  "description": "A command line tool to move Trello cards from 'Next Up' to 'In Progress' to 'Code Review' to 'Live'.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
