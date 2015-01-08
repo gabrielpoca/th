@@ -14,6 +14,10 @@ npm install -g trello-hub
 
 ## Commands
 
+You can move a card to different states. If you don't provide the id of the card you want to move you'll be asked based on a print of all available cards for the corresponding list.
+
+Notice that the card moved is returned by the process.
+
 ### Initialize
 
 ```
@@ -26,14 +30,26 @@ th -i
 th -to inprogress
 ```
 
+```
+th -to inprogress -c card_id
+```
+
 ### Move to Code Review
 
 ```
 th -to codereview
 ```
 
+```
+th -to codereview -c card_id
+```
+
 ### Move to Live
 
 ```
 th -to live
+```
+
+```
+th -to live -c card_id
 ```
