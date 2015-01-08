@@ -1,16 +1,24 @@
-# TH
+# Trello Hub
 
-A command line tool to move Trello cards based from "Next Up" to "In Progress" to "Code Review" to "Live".
+Trello HUb is a command line tool to move Trello cards on a Kanban process.
+The available states for now are "Next Up", "In Progress", "Code Review" and "Live".
+I hope to refactor in order to make this configurable, for now you'll be asked to choose the lists corresponding of each state from a board of your choice.
+
+The purpose of this tool is to be integrated with git management scripts.
+For instance, when you open a pull-request you can automatically move the corresponding Trello card to "Code Review".
+I'll have an example soon.
 
 ![Makarov Dreyar](http://i451.photobucket.com/albums/qq237/Jasin_Stiner/Makarov_by_ga4000.jpg)
 
 ## Install
 
-To install run
+To install Trello Hub run
 
 ```
 npm install -g trello-hub
 ```
+
+Now you can use the command `th`.
 
 ## Commands
 
@@ -52,4 +60,10 @@ th -to live
 
 ```
 th -to live -c card_id
+```
+
+### Help
+
+```
+th -h
 ```
