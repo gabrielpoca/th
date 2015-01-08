@@ -1,13 +1,18 @@
 {
   "name": "trello-hub",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A command line tool to move Trello cards from 'Next Up' to 'In Progress' to 'Code Review' to 'Live'.",
+  "homepage": "https://github.com/gabrielpoca/th",
   "main": "lib/th.js",
   "bin": {
     "th": "lib/th.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gabrielpoca/th.git"
   },
   "author": "Gabriel Poça <gabrielpoca@gmail.com>",
   "license": "ISC",
@@ -17,5 +22,10 @@
     "promise": "^6.0.1",
     "prompt": "^0.2.14",
     "underscore-node": "^0.1.2"
-  }
+  },
+  "keywords": [
+    "trello",
+    "kanban",
+    "git"
+  ]
 }
