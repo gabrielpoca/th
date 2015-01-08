@@ -1,6 +1,6 @@
 {
   "name": "trello-hub",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A command line tool to move Trello cards from 'Next Up' to 'In Progress' to 'Code Review' to 'Live'.",
   "main": "lib/th.js",
   "bin": {
