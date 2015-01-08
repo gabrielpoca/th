@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './', '--tag', 'alpha' ]
+2 info using npm@2.0.0-beta.0
+3 info using node@v0.10.28
+4 verbose publish [ './' ]
+5 verbose cache add [ './', null ]
+6 verbose cache add spec="./" args=["./",null]
+7 verbose cache add local package /Users/gabriel/projects/th
+8 silly lockFile 0ee6c175- ./
+9 verbose lock ./ /Users/gabriel/.npm/0ee6c175-.lock
+10 verbose tar pack [ '/Users/gabriel/.npm/trello-hub/0.0.0/package.tgz', './' ]
+11 verbose tarball /Users/gabriel/.npm/trello-hub/0.0.0/package.tgz
+12 verbose folder ./
+13 info prepublish trello-hub@0.0.0
+14 silly lockFile 04cb2bca-tar tar://./
+15 verbose lock tar://./ /Users/gabriel/.npm/04cb2bca-tar.lock
+16 silly lockFile d5bfc8a1-npm-trello-hub-0-0-0-package-tgz tar:///Users/gabriel/.npm/trello-hub/0.0.0/package.tgz
+17 verbose lock tar:///Users/gabriel/.npm/trello-hub/0.0.0/package.tgz /Users/gabriel/.npm/d5bfc8a1-npm-trello-hub-0-0-0-package-tgz.lock
+18 silly lockFile 04cb2bca-tar tar://./
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile d5bfc8a1-npm-trello-hub-0-0-0-package-tgz tar:///Users/gabriel/.npm/trello-hub/0.0.0/package.tgz
+21 silly lockFile d5bfc8a1-npm-trello-hub-0-0-0-package-tgz tar:///Users/gabriel/.npm/trello-hub/0.0.0/package.tgz
+22 silly lockFile 96203a74-iel-npm-trello-hub-0-0-0-package /Users/gabriel/.npm/trello-hub/0.0.0/package
+23 verbose lock /Users/gabriel/.npm/trello-hub/0.0.0/package /Users/gabriel/.npm/96203a74-iel-npm-trello-hub-0-0-0-package.lock
+24 silly lockFile 96203a74-iel-npm-trello-hub-0-0-0-package /Users/gabriel/.npm/trello-hub/0.0.0/package
+25 silly lockFile 96203a74-iel-npm-trello-hub-0-0-0-package /Users/gabriel/.npm/trello-hub/0.0.0/package
+26 silly lockFile 0ee6c175- ./
+27 silly lockFile 0ee6c175- ./
+28 silly publish { name: 'trello-hub',
+28 silly publish   version: '0.0.0',
+28 silly publish   description: 'A command line tool to move Trello cards from \'Next Up\' to \'In Progress\' to \'Code Review\' to \'Live\'.',
+28 silly publish   main: 'lib/th.js',
+28 silly publish   bin: { th: 'lib/th.js' },
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   author: { name: 'Gabriel Poça', email: 'gabrielpoca@gmail.com' },
+28 silly publish   license: 'ISC',
+28 silly publish   dependencies:
+28 silly publish    { 'command-line-args': '^0.5.3',
+28 silly publish      'node-trello': '^1.0.1',
+28 silly publish      promise: '^6.0.1',
+28 silly publish      prompt: '^0.2.14',
+28 silly publish      'underscore-node': '^0.1.2' },
+28 silly publish   readme: '# TH\n\nA command line tool to move Trello cards based from "Next Up" to "In Progress" to "Code Review" to "Live".\n\n![Makarov Dreyar](http://i451.photobucket.com/albums/qq237/Jasin_Stiner/Makarov_by_ga4000.jpg)\n\n## Install\n\nTo install run\n\n```\nnpm install -g trello-hub\n```\n\n## Commands\n\n### Initialize\n\n```\nth -i\n```\n\n### Move to In progress\n\n```\nth -to inprogress\n```\n\n### Move to Code Review\n\n```\nth -to codereview\n```\n\n### Move to Live\n\n```\nth -to live\n```\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '93c659c931d512bc7be30cc84326f67396b75be0',
+28 silly publish   _id: 'trello-hub@0.0.0',
+28 silly publish   _shasum: '2619e418815dcfe02b640e644c5d93388f3b8650',
+28 silly publish   _from: './' }
+29 verbose mapToRegistry name trello-hub
+30 verbose mapToRegistry uri https://registry.npmjs.org/trello-hub
+31 verbose publish registryBase https://registry.npmjs.org/
+32 verbose request on initialization, where is /trello-hub
+33 verbose request after pass 1, where is /trello-hub
+34 verbose request url raw /trello-hub
+35 verbose request resolving registry [ 'https://registry.npmjs.org/', './trello-hub' ]
+36 verbose request after pass 2, where is https://registry.npmjs.org/trello-hub
+37 info retrier registry request attempt 1 at 12:05:31
+38 verbose request id 954feb97dc7ea256
+39 http request PUT https://registry.npmjs.org/trello-hub
+40 http 403 https://registry.npmjs.org/trello-hub
+41 verbose headers { date: 'Thu, 08 Jan 2015 12:05:31 GMT',
+41 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+41 verbose headers   'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=60',
+41 verbose headers   'content-length': '2937',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   'x-served-by': 'cache-fra1224-FRA',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1420718731.582022,VS0,VE191',
+41 verbose headers   'keep-alive': 'timeout=10, max=50',
+41 verbose headers   connection: 'Keep-Alive' }
+42 error publish Failed PUT 403
+43 error Error: forbidden cannot modify pre-existing version: 0.0.0
+43 error old={"name":"trello-hub","version":"0.0.0","description":"A command line tool to move Trello cards from 'Next Up' to 'In Progress' to 'Code Review' to 'Live'.","main":"lib/th.js","bin":{"th":"lib/th.js"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":{"name":"Gabriel Poça","email":"gabrielpoca@gmail.com"},"license":"ISC","dependencies":{"command-line-args":"^0.5.3","node-trello":"^1.0.1","promise":"^6.0.1","prompt":"^0.2.14","underscore-node":"^0.1.2"},"gitHead":"5171d6d911713a6255c6270674639628dbdbb313","_id":"trello-hub@0.0.0","_shasum":"5c065f7fe7a9dbbd043dd6088c6093959bc77cca","_from":"./","_npmVersion":"2.0.0-beta.0","_npmUser":{"name":"gabrielpoca","email":"gabrielpoca@gmail.com"},"maintainers":[{"name":"gabrielpoca","email":"gabrielpoca@gmail.com"}],"dist":{"shasum":"5c065f7fe7a9dbbd043dd6088c6093959bc77cca","tarball":"http://registry.npmjs.org/trello-hub/-/trello-hub-0.0.0.tgz"}}
+43 error new={"name":"trello-hub","version":"0.0.0","description":"A command line tool to move Trello cards from 'Next Up' to 'In Progress' to 'Code Review' to 'Live'.","main":"lib/th.js","bin":{"th":"lib/th.js"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":{"name":"Gabriel Poça","email":"gabrielpoca@gmail.com"},"license":"ISC","dependencies":{"command-line-args":"^0.5.3","node-trello":"^1.0.1","promise":"^6.0.1","prompt":"^0.2.14","underscore-node":"^0.1.2"},"readme":"# TH\u000a\u000aA command line tool to move Trello cards based from \"Next Up\" to \"In Progress\" to \"Code Review\" to \"Live\".\u000a\u000a![Makarov Dreyar](http://i451.photobucket.com/albums/qq237/Jasin_Stiner/Makarov_by_ga4000.jpg)\u000a\u000a## Install\u000a\u000aTo install run\u000a\u000a```\u000anpm install -g trello-hub\u000a```\u000a\u000a## Commands\u000a\u000a### Initialize\u000a\u000a```\u000ath -i\u000a```\u000a\u000a### Move to In progress\u000a\u000a```\u000ath -to inprogress\u000a```\u000a\u000a### Move to Code Review\u000a\u000a```\u000ath -to codereview\u000a```\u000a\u000a### Move to Live\u000a\u000a```\u000ath -to live\u000a```\u000a","readmeFilename":"README.md","gitHead":"93c659c931d512bc7be30cc84326f67396b75be0","_id":"trello-hub@0.0.0","_shasum":"2619e418815dcfe02b640e644c5d93388f3b8650","_from":"./","_npmVersion":"2.0.0-beta.0","_npmUser":{"name":"gabrielpoca","email":"gabrielpoca@gmail.com"},"maintainers":[{"name":"gabrielpoca","email":"gabrielpoca@gmail.com"}],"dist":{"shasum":"2619e418815dcfe02b640e644c5d93388f3b8650","tarball":"http://registry.npmjs.org/trello-hub/-/trello-hub-0.0.0.tgz"}}: trello-hub
+43 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:245:14)
+43 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:183:65)
+43 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+43 error     at Request.EventEmitter.emit (events.js:98:17)
+43 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1047:14)
+43 error     at Request.EventEmitter.emit (events.js:117:20)
+43 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:998:12)
+43 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+43 error     at _stream_readable.js:919:16
+43 error     at process._tickCallback (node.js:419:13)
+44 error If you need help, you may report this *entire* log,
+44 error including the npm and node versions, at:
+44 error     <http://github.com/npm/npm/issues>
+45 error System Darwin 14.0.0
+46 error command "node" "/usr/local/bin/npm" "publish" "./" "--tag" "alpha"
+47 error cwd /Users/gabriel/projects/th
+48 error node -v v0.10.28
+49 error npm -v 2.0.0-beta.0
+50 verbose exit [ 1, true ]
